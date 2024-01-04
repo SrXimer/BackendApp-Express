@@ -4,6 +4,11 @@ Desarrollo del backend para la app de ximer desarrollado con Express.js y Node.j
 ## Strucure
 Include Express.js and Node.js
 
+## COMPILE AND RUN
+
+### Develop
+npm run dev
+
 
 ## API STRUCTURE
 ### USERS

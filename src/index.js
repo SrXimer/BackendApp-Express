@@ -10,7 +10,11 @@ app.use(express.json());
 app.use('/api/v1',indexRoutes)
 app.use('/api/v1',userRoutes)
 
-
+app.use((req, res) => {
+    res.status(404).json({
+        message: 'ENDPOINT Not Found'
+    });
+});
 
 app.listen(3000)
 console.log('Server on port 3000');
