@@ -9,6 +9,8 @@ Include Express.js and Node.js
 ### Develop
 npm run dev
 
+### Production
+npm run start
 
 ## API STRUCTURE
 ### USERS
