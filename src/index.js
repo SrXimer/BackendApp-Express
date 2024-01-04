@@ -1,20 +1,5 @@
-import express from 'express';
+import app from './app.js';
+import {PORT} from'./config.js'
 
-import userRoutes from './routes/users.routes.js';
-import indexRoutes from './routes/index.routes.js';
-
-const app = express();
-
-app.use(express.json());
-
-app.use('/api/v1',indexRoutes)
-app.use('/api/v1',userRoutes)
-
-app.use((req, res) => {
-    res.status(404).json({
-        message: 'ENDPOINT Not Found'
-    });
-});
-
-app.listen(3000)
-console.log('Server on port 3000');
+app.listen(PORT)
+console.log('Server on port: ', PORT);
